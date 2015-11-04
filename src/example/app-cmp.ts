@@ -5,8 +5,10 @@ import { CoTagsCmp } from '../co-tags/co-tags-cmp'
   selector: 'co-tags-example',
   directives: [CoTagsCmp],
   template: `
-    <h3>co-tags</h3>
-    <co-tags [tags]="tags"></co-tags>
+    <div class="container" style="margin-top: 25px;">
+      <h3>co-tags</h3>
+      <co-tags [tags]="tags"></co-tags>
+    </div>
   `
 })
 export class AppCmp {
