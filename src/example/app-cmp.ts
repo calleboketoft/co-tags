@@ -12,6 +12,7 @@ import { CoTagsCmp } from '../co-tags/co-tags-cmp'
   `
 })
 export class AppCmp {
+  tags
   constructor () {
     this.tags = ['biff', 'buff', 'boff']
   }
