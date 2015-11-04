@@ -2,7 +2,7 @@ import { Component } from 'angular2/angular2'
 import { CoTagsCmp } from '../co-tags/co-tags-cmp'
 
 @Component({
-  selector: 'app',
+  selector: 'co-tags-example',
   directives: [CoTagsCmp],
   template: `
     <h3>co-tags</h3>

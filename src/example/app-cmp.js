@@ -17,7 +17,7 @@ var AppCmp = (function () {
     }
     AppCmp = __decorate([
         angular2_1.Component({
-            selector: 'app',
+            selector: 'co-tags-example',
             directives: [co_tags_cmp_1.CoTagsCmp],
             template: "\n    <h3>co-tags</h3>\n    <co-tags [tags]=\"tags\"></co-tags>\n  "
         }), 
