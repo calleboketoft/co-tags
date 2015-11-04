@@ -1,11 +1,12 @@
 {
   "name": "co-tags",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Angular 2 tags component",
   "main": "server.js",
   "scripts": {
+    "start": "node server.js",
     "tsc": "tsc -p src",
-    "start": "node server"
+    "prepublish": "npm run tsc"
   },
   "author": "Carl-Ola Boketoft",
   "license": "ISC",
