@@ -5,6 +5,6 @@ npm-debug.log
 src/jspm_packages
 src/css
 
-src/*.js
-src/*.map
-src/*.d.ts
+src/**/*.js
+src/**/*.map
+src/**/*.d.ts
