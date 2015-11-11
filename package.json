@@ -5,7 +5,9 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
+    "compile": "npm run tsc",
     "tsc": "tsc -p src",
+    "watch": "tsc -p src -w",
     "prepublish": "npm run tsc"
   },
   "author": "Carl-Ola Boketoft",
