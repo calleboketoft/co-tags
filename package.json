@@ -1,11 +1,10 @@
 {
   "name": "co-tags",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Angular 2 tags component",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "compile": "npm run tsc",
     "tsc": "tsc -p src",
     "watch": "tsc -p src -w",
     "prepublish": "npm run tsc"
