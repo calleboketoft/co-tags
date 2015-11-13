@@ -5,15 +5,22 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
+    "build": "npm run tsc",
     "tsc": "tsc -p src",
     "watch": "tsc -p src -w",
-    "prepublish": "npm run tsc"
+    "prepublish": "npm run build"
+  },
+  "config": {
+    "ghooks": {
+      "pre-commit": "npm run build"
+    }
   },
   "author": "Carl-Ola Boketoft",
   "license": "ISC",
   "devDependencies": {
     "angular2": "^2.0.0-alpha.45",
     "express": "^4.13.3",
+    "ghooks": "^1.0.0",
     "systemjs": "^0.19.5",
     "typescript": "^1.6.2"
   }
