@@ -24,7 +24,7 @@ import { Component, NgFor } from 'angular2/angular2'
 })
 export class CoTagsCmp {
 
-  tags: Array<any>
+  tags: Array<string>
 
   typing ($event) {
     if ($event.keyCode === 13) {
