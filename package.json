@@ -8,11 +8,13 @@
     "build": "npm run tsc",
     "tsc": "tsc -p src",
     "watch": "tsc -p src -w",
-    "prepublish": "npm run build"
+    "prepublish": "npm run build",
+    "postinstall": "jspm install",
+    "test": "karma start"
   },
   "config": {
     "ghooks": {
-      "pre-commit": "npm run build"
+      "pre-commit": "npm run build && npm run test"
     }
   },
   "author": "Carl-Ola Boketoft",
@@ -22,15 +24,12 @@
     "es6-module-loader": "^0.17.8",
     "express": "^4.13.3",
     "ghooks": "^1.0.0",
-    "jasmine": "^2.3.2",
     "jasmine-core": "^2.3.4",
     "jspm": "^0.16.14",
     "karma": "^0.13.15",
     "karma-chrome-launcher": "^0.2.1",
     "karma-jasmine": "^0.3.6",
     "karma-jspm": "^2.0.2",
-    "karma-phantomjs-launcher": "^0.2.1",
-    "phantomjs": "^1.9.18",
     "systemjs": "^0.19.5",
     "typescript": "^1.6.2"
   },
