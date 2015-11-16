@@ -1,20 +1,14 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <script src="../../node_modules/systemjs/dist/system.src.js"></script>
-    <script src="../../node_modules/angular2/bundles/angular2.dev.js"></script>
-    <script src="../../node_modules/angular2/bundles/router.dev.js"></script>
-    <script>
-      System.config({
-        packages: {
-          'example': { defaultExtension: 'js' },
-          'co-tags': { defaultExtension: 'js' }
-        }
-      })
-      System.import('example/bootstrap')
-    </script>
+    <title>Angular 2 ES6 App</title>
   </head>
-  <body>
+  <body style="margin-top: 50px;">
     <co-tags-example>Loading...</co-tags-example>
+    <script src="../jspm_packages/system.js"></script>
+    <script src="../jspm.config.js"></script>
+    <script>
+      System.import('./example/bootstrap')
+    </script>
   </body>
 </html>
