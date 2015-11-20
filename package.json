@@ -9,8 +9,11 @@
     "tsc": "tsc -p src",
     "watch": "tsc -p src -w",
     "prepublish": "npm run build",
-    "postinstall": "jspm install",
-    "test": "karma start"
+    "postinstall": "jspm install && npm run webdriver",
+    "test": "karma start",
+    "webdriver": "node_modules/protractor/bin/webdriver-manager update",
+    "tsc-e2e": "tsc -p test/e2e",
+    "test-e2e": "npm run tsc-e2e && gulp test-e2e"
   },
   "config": {
     "ghooks": {
@@ -24,12 +27,14 @@
     "es6-module-loader": "^0.17.8",
     "express": "^4.13.3",
     "ghooks": "^1.0.0",
+    "gulp": "^3.9.0",
     "jasmine-core": "^2.3.4",
     "jspm": "^0.16.14",
     "karma": "^0.13.15",
     "karma-chrome-launcher": "^0.2.1",
     "karma-jasmine": "^0.3.6",
     "karma-jspm": "^2.0.2",
+    "protractor": "^3.0.0",
     "systemjs": "^0.19.5",
     "typescript": "^1.6.2"
   },

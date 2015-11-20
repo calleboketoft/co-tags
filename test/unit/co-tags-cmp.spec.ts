@@ -1,6 +1,6 @@
 import 'reflect-metadata'
 import 'zone.js'
-import { CoTagsCmp } from '../src/co-tags/co-tags-cmp'
+import { CoTagsCmp } from '../../src/co-tags/co-tags-cmp'
 
 describe('CoTagsCmp', () => {
   it('should be defined', () => {

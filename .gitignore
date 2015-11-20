@@ -5,6 +5,8 @@ npm-debug.log
 jspm_packages
 src/css
 typings
+test/e2e/**/*.js
+test/e2e/**/*.map
 
 src/**/*.js
 src/**/*.map
