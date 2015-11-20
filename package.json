@@ -1,6 +1,6 @@
 {
   "name": "co-tags",
-  "version": "0.0.8",
+  "version": "0.1.1",
   "description": "Angular 2 tags component",
   "main": "server.js",
   "scripts": {
@@ -40,13 +40,11 @@
   },
   "jspm": {
     "configFile": "jspm.config.js",
-    "dependencies": {
+    "devDependencies": {
       "angular2": "npm:angular2@^2.0.0-alpha.46",
       "reflect-metadata": "npm:reflect-metadata@^0.1.2",
+      "typescript": "npm:typescript@^1.6.2",
       "zone.js": "npm:zone.js@^0.5.8"
-    },
-    "devDependencies": {
-      "typescript": "npm:typescript@^1.6.2"
     }
   }
 }
