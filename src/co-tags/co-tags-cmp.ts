@@ -1,4 +1,5 @@
-import { Component, NgFor } from 'angular2/angular2'
+import { Component } from 'angular2/angular2'
+import { NgFor } from 'angular2/common'
 
 @Component({
   selector: 'co-tags',
@@ -15,7 +16,7 @@ import { Component, NgFor } from 'angular2/angular2'
   `],
   template: `
     <input class="form-control" (keyup)="typing($event)">
-    <span class="label label-info" *ng-for="#tag of tags">
+    <span class="label label-info" *ngFor="#tag of tags">
       <span (click)="removeTag(tag)">{{tag}}</span>
     </span>
   `,
